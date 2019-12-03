@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Calculator</title>
+  <h3>VetsinTech Web Dev Pre-Work Task</h3>
+  <p> VetsinTech supports our current and returning veterans with re-integration services, 
+      and by connecting them to the national technology ecosystem. 
+      ViT is committed to bringing together a tech-specific network, resources, and programs
+      for our veterans interested in Education, Entrepreneurship, and Employment - the 3E’s!</p>
+</head>
+  
+  <script>
+    function calculateFunction(){
+      //get value from input1
+      var a = document.getElementById("input1id").value;
+      
+      //get value from input2
+      var b = document.getElementById("input2id").value;
+      
+      //add input1 to input2
+      var sum = parseFloat(a) + parseFloat(b);
+      
+      //print result to page
+      document.write(sum)
+    }
+  </script>
+  
+<body>
+  <h2> Simple Calculator</h2>
+  <p>Enter the values in the two textboxes and press the button to see the result.</p>
+  
+  <input type="text" name="input1" id="input1id" />
+   + 
+  <input type="text" name="input2" id="input2id" />
+  
+  <input type="submit" name="caluclation" id="calculation"
+   onClick="calculateFunction()" value="Calculate Now" />
+
+</body>
+</html>
